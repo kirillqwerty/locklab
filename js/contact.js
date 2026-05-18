@@ -3,8 +3,8 @@
   "use strict";
 
   const ICONS = window.LOCKLAB_ICONS;
-  // Same-origin: ingress routes /api/* to backend port 8001
-  const API_BASE = "/api";
+  // Relative path works on GitHub Pages subpaths and on normal hosting
+  const API_BASE = "./api";
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {

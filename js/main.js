@@ -523,7 +523,7 @@
     const totalFrames = 151;
     const framePath = (index) => {
       const num = String(index).padStart(3, "0");
-      return `/assets/lock-animation/ezgif-frame-${num}.jpg`;
+      return `./assets/lock-animation/ezgif-frame-${num}.jpg`;
     };
 
     const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
